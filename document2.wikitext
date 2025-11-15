@@ -1,0 +1,70 @@
+{{stud}}
+{{LargeNumber}}
+
+= Hyper-BEAF =  
+'''Hyper-BEAF''' is an extension of the classical '''BEAF''' (Bowers’ Exploding Array Function), designed to introduce even higher-order recursive array operators. BEAF itself is defined by Jonathan Bowers and documented on the Googology Wiki.<ref>https://googology.fandom.com/wiki/Bowers%27_Exploding_Array_Function</ref>
+
+== Background terminology ==
+
+; '''Array-of operator'''  
+The array-of operator refers to an array construction used throughout BEAF. Its behavior is described in the Googology Wiki article ‘‘Array of’’.<ref>https://googology.fandom.com/wiki/Array_of</ref>
+
+; '''Legions / L-spaces'''  
+BEAF’s higher-level separators (/ \\ |) form “legion spaces”, whose structure is documented in the article ‘‘Array’’.<ref>https://googology.fandom.com/wiki/Array</ref>  
+The symbol ‘‘L’’ is associated to legion-levels in Bowers’ notations.<ref>https://googology.fandom.com/wiki/L</ref>
+
+== Hyper-BEAF operators ==
+
+The following operators are author-introduced extensions, but they rely on the BEAF ‘‘L’’ structure.
+
+; '''Superplus'''  
+:<code>(#n) = { L(n) }</code>  
+Here <code>L(n)</code> refers to the legion-space concept as used in BEAF.<ref>https://googology.fandom.com/wiki/L</ref>
+
+; '''Duperplus'''  
+:<code>(#n, m) = { L( #(m) n ) }</code>  
+Uses nested Superplus operations.
+
+; '''Metaplus'''  
+:<code>(#n, m, q) = { L( #( #m( #q ) ) n ) }</code>
+
+; '''Block'''  
+:<code>n_m = (#n, n, n, … up to m)</code>  
+A Block is a finite list of Metaplus operators.
+
+; '''Superblock'''  
+:<code>n__m = (n_m, n_m, … n_m)</code>
+
+; '''Duperblock'''  
+:<code>n[q]m = n_(q)m</code>
+
+; '''Metablock'''  
+:<code>n[q:a]m = (n[q]m repeated a times)</code>
+
+; '''Extended Metablock'''  
+:<code>n[q:a:b]m = (n[q]m repeated a times)[q:a]</code>
+
+== Terminialis hierarchy ==
+
+; '''Terminialis-Alpha'''  
+:<math>\mathrm{Ter}(\alpha, n) = n[\,q:q:q:\dots:\alpha\,]n</math>
+
+; '''Terminialis-Beta'''  
+:<math>\mathrm{Ter}(\beta, n) = n[\,q:q:q:\dots:\beta [q:q:q:\dots:\beta]n\,]n</math>
+
+; '''Terminialis-Gamma'''  
+:<math>\mathrm{Ter}(\gamma, n) = \mathrm{Ter}(\beta)\bigl(n[q:q:q:\dots:\gamma]n,\; n[q:q:q:\dots:\gamma]n\bigr)</math>
+
+== Examples ==
+
+* <code>Ter(3, 3) = 3[3:3:3]3 = (3[3]3, 3[3]3, 3[3]3)</code>  
+* <code>Ter(4, 2) = 2[2:2:2:2]2 = (2[2]2, 2[2]2, 2[2]2, 2[2]2)</code>
+
+== Growth-Rate (rough) ==
+
+Classical BEAF reaches growth near ε₀-like behavior in parts of its hierarchy.<ref>https://googology.fandom.com/wiki/Bowers%27_Exploding_Array_Function</ref>
+
+Hyper-BEAF, by contrast, appears to reach beyond the systems normally associated with the Fast-Growing Hierarchy.
+
+== References ==
+<references/>
