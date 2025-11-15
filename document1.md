@@ -84,7 +84,8 @@ Here we have some *Terminialis-Alpha* examples:
 ## Growth rate approximation
 
 The maximum **FGH** class estimated of **BEAF**:  
-`F(ε₀)(n)`
+`θ(Ω^Ω)`  *(Ordinal collapsing FGH)*
 
 And my **FGH** approximation of **Hyper-BEAF**:  
-`F(Γ²)(n)`
+`ψ₀(ε_{Ω+1})` *(Ordinal collapsing FGH)*
+
