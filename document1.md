@@ -73,7 +73,9 @@ Here we have some *Terminialis-Alpha* examples:
 
 > **Ter(3, 3)**  
 > `= 3[3:3:3]3 = (3[3]3, 3[3]3, 3[3]3)`  
-> of **BEAF Ligions** of itself.
+> of **BEAF Ligions** of itself. This means it is equal to this:
+> `{ { L(3) # L(3) # L(3) , 3 , 3 } , { L(3) # L(3) # L(3) , 3 , 3 } , { L(3) # L(3) # L(3) , 3 , 3 } }`
+> So this is a hybrid beetween *BEAF* Ligions and *Superpluses*.
 
 > **Ter(4, 2)**  
 > `= 2[2:2:2:2]2 = (2[2]2, 2[2]2, 2[2]2, 2[2]2)`  
@@ -88,4 +90,5 @@ The maximum **FGH** class estimated of **BEAF**:
 
 And my **FGH** approximation of **Hyper-BEAF**:  
 `ψ₀(ε_{Ω+1})` *(Ordinal collapsing FGH)*
+
 
